@@ -1,7 +1,7 @@
 # The-Monster-Slayer
 The Monster Slayer
 
-                    <!-- code game The Monster Slayer -->
+                        <!-- code game The Monster Slayer -->
 
 <!DOCTYPE html>
 <html>
@@ -48,7 +48,7 @@ The Monster Slayer
         <section v-if='turns.length > 0' class="row log">
             <div class="small-12 columns">
                 <ul>
-                    <li v-for = 'turn in turns'>{{ turn.textLog }}</li>
+                    <li class='turn' :class= '{"player-turn" : turn.player, "monster-turn" : !turn.player}' v-for= 'turn in turns'>{{ turn.textLog }}</li>
                 </ul>
             </div>
         </section>
