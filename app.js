@@ -25,7 +25,7 @@ var Vuejs = new Vue({
             var damageMonster = Math.floor(Math.random() * 11);
             this.monsterHealth -= damageMonster;
                 this.turns.unshift({
-                player: true,
+                player: false,
                 textLog: 'Hero hits Monster for ' + damageMonster, 
             });
             //monster win
@@ -66,7 +66,7 @@ var Vuejs = new Vue({
             var damageSpeciaMonster = Math.floor(Math.random() * 21);
             this.monsterHealth -= damageSpeciaMonster;
             this.turns.unshift({
-                player: true,
+                player: false,
                 textLog: 'Hero hits Monster for ' + damageSpeciaMonster, 
             });
             //monster win
@@ -112,7 +112,7 @@ var Vuejs = new Vue({
             var damegeMonterWhileHealHero = Math.floor(Math.random() * 13);
             this.heroHealth -= damegeMonterWhileHealHero;
             this.turns.unshift({
-                player: true,
+                player: false,
                 textLog: 'Monster hits Hero for ' + damegeMonterWhileHealHero, 
             });
         }
